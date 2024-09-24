@@ -40,7 +40,7 @@ letter-spacing: 1px;
 animation: 3s fade-in ease-in-out;
 }
 .dic-container{
-width: 40vmax;
+width: 40%;
 border-radius: 2vmax;
 background-color: #b42b0b;
 display: flex;
@@ -196,7 +196,7 @@ color: #E6DDE6;
     font-size: 5vmax;
   }
   .dic-container{
-    width: 50vmax;
+    width: 90%;
   }
   .btn{
     font-size: 2.4vmax;
