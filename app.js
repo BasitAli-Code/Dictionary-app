@@ -74,17 +74,17 @@ function updateWordDisplay(word, data) {
 
 // Function to set up audio playback for the fetched word
 function setupAudio(data) {
-    // Set the audio source if available
-    audioElement.setAttribute("src", data[0].phonetics[0].audio);
+    const audioSource = data[0].phonetics[0]?.audio;
 
-    // Add click event listener for audio playback
-    document.querySelector(".fa-volume-high").addEventListener('click', () => {
-        if (data[0].phonetics[0].audio) {
+    if (audioSource) {
+        audioElement.setAttribute("src", audioSource);
+        document.querySelector(".fa-volume-high").addEventListener('click', () => {
             audioElement.play(); // Play audio
-        } else {
-            console.log("No audio available");
-        }
-    });
+        });
+    } else {
+        // Do nothing if no audio is available
+        console.log("No audio available"); // Optional: log to console if needed
+    }
 }
 
 
