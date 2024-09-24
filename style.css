@@ -190,3 +190,28 @@ background-color: #BBC5AA;
 body.light-theme .btn:hover{
 color: #E6DDE6;
 }
+@media(max-width: 800px)
+ {
+  h1{
+    font-size: 5vmax;
+  }
+  .dic-container{
+    width: 50vmax;
+  }
+  .btn{
+    font-size: 2.4vmax;
+  }
+  #change-theme{
+    font-size: 2.1vmax;
+  }
+  .search-word input {
+    font-size: 2.1vmax;
+  }
+  .searched-word p{
+    font-size: 2.8vmax;
+  }
+  .meanings , .example {
+    font-size: 2.5vmax;
+  }
+ 
+}
